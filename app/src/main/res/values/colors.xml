@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="active_button_colour">#806AF321</color>
+    <color name="inactive_button_colour">#80F32121</color>
+    <color name="button_text_colour_plus">#E91E63</color>
+    <color name="button_text_colour_minus">#4CAF50</color>
+    <color name="button_text_colour_times">#3F51B5</color>
+    <color name="button_text_colour_divided">#FFC107</color>
+
 </resources>
