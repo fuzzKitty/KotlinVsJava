@@ -10,6 +10,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //try to play with the variables and only declare them without initialising them... What happens? Can it be done? Can we initialise them later? lateinit???
+    private var firstNumber: Number = 0;
+    private var secondNumber: Number = 0;
+
+    //try to initialise the operator to null, can you do it?
+    private var currentOperator: Operator = Operator.PLUS;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
