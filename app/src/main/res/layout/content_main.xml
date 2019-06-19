@@ -26,9 +26,12 @@
         <EditText
             android:id="@+id/first_number_et"
             android:layout_width="match_parent"
-            android:background="@android:color/transparent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textSize="@dimen/numbers_text_size" />
 
     </LinearLayout>
 
@@ -55,8 +58,8 @@
             android:layout_height="@dimen/operation_button_size"
             android:layout_margin="@dimen/operation_button_margin"
             android:background="@color/inactive_button_colour"
-            android:textColor="@android:color/white"
             android:text="-"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/operation_button_text_size" />
 
         <Button
@@ -98,9 +101,12 @@
         <EditText
             android:id="@+id/second_number_et"
             android:layout_width="match_parent"
-            android:background="@android:color/transparent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textSize="@dimen/numbers_text_size" />
 
     </LinearLayout>
 
@@ -113,9 +119,10 @@
         <TextView
             android:id="@+id/result_tv"
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="Result here :)"
+            android:textSize="@dimen/numbers_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

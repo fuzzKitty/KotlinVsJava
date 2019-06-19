@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     // Try to play with the variables and only declare them without initialising them...
     // What happens? Can it be done? Can we initialise them later? lateinit???
     private var firstNumber: Double = 0.0;
-    private var secondNumber: Double = 0 as Double;
+    private var secondNumber: Double = 0.0;
 
     // Try to initialise the operator to null, can you do it?
     private var currentOperator: Operator = Operator.PLUS;
@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
 
             //Smart Cast here!!!
-            firstNumber = first_number_et.getText() as Double
-            secondNumber = second_number_et.getText() as Double
+            firstNumber = first_number_et.getText().toString().toDouble()
+            secondNumber = second_number_et.getText().toString().toDouble()
 
             // Try to use an implicit setter when accessing the TextView text
             // Can you do the same with the actual numbers and get rid of the Class variables?
@@ -94,16 +94,16 @@ class MainActivity : AppCompatActivity() {
     private fun computeResult(num1: Double, num2: Double, operator: Operator): String {
 
         //type inference?
-        var result: Double = when(operator) {
+        var result: Double = when (operator) {
             Operator.PLUS -> (num1 + num2)
             Operator.MINUS -> (num1 - num2)
             Operator.TIMES -> (num1 * num2)
             Operator.DIVIDED -> (num1 / num2)
-            else -> 0 as Double //there is no need for else! :)
+            else -> 0.0 //there is no need for else! :)
         }
 
-//        return result as String
-        return ""
+        return result.toString()
+
     }
 
 
