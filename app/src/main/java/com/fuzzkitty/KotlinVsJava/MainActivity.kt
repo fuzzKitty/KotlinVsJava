@@ -74,21 +74,26 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    //MENU
+    // Can you add a menu function that switches you over to Java? Kotlin and Java are interoperable!!!
+    // Below are the the 2 methods you need to get started with a Menu
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.switch_to_java -> true
             else -> super.onOptionsItemSelected(item)
         }
+
     }
+
 
     // Custom functions
     private fun computeResult(num1: Double, num2: Double, operator: Operator): String {
