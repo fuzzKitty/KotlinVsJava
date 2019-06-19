@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:imeOptions="actionNext"
+            android:nextFocusForward="@id/second_number_et"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textSize="@dimen/numbers_text_size" />
